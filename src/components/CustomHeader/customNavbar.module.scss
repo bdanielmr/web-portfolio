@@ -1,0 +1,109 @@
+.c-header {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  z-index: 2;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav-item {
+  float: left;
+  height: 20px;
+  margin: 1px 10px;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 22px;
+  padding: 0 5px 0 5px;
+  transition: background 0.7s ease;
+  font-size: 16px;
+}
+.a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-item-a {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-item > a:hover {
+  text-decoration: underline;
+}
+
+.nav-item .sub-menu {
+  height: 150px;
+  top: 20px;
+  position: absolute;
+  min-width: 35em;
+  padding: 0.1em 0.1em;
+  display: none;
+  z-index: 2;
+  border-radius: 0rem;
+
+  left: inherit;
+  background: white;
+}
+.sub-menu {
+  margin-right: 0px;
+}
+.sub-menu ul {
+  overflow: hidden;
+  list-style-type: none;
+  background: white;
+  display: flex;
+}
+
+.sub-menu-item {
+  width: 100%;
+  margin: 0px 0px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-menu-item a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  line-height: 32px;
+  padding: 0px 0px 0px 0px;
+  transition: background 0.3s ease;
+}
+
+.sub-menu-item a:hover,
+.sub-menu:hover ~ a {
+}
+
+.nav-item a:hover ~ .sub-menu,
+.sub-menu:hover {
+  display: block;
+}

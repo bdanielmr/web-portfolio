@@ -1,0 +1,48 @@
+.custom-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  background: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.test-1 {
+  height: 55px;
+  flex: 0.2 1 19%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.test-hide {
+  height: 55px;
+  flex: 1.5 1 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test-3 {
+  height: 55px;
+  flex: 0.2 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .custom-header {
+    justify-content: space-evenly;
+  }
+  .test-hide {
+    background: darkblue;
+    display: none;
+    flex: 0 0 0;
+  }
+  .test-1 {
+    justify-content: flex-start;
+  }
+  .test-3 {
+    justify-content: flex-end;
+  }
+}
