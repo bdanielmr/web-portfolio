@@ -47,13 +47,31 @@ const HomePageView = (props) => {
             justifyContent: "center",
           }}
         >
-          <p>Ver mas</p>
+          <a
+            style={{
+              cursor: "pointer",
+              marginBottom: "25px",
+              textDecoration: "underline",
+            }}
+          >
+            Ver mas
+          </a>
         </div>
       </section>
 
-      <section style={{ background: "#f4f4f4", color: "black" }}>
-        <div>footer</div>
-        <div>footer</div>
+      <section
+        style={{
+          background: "#222",
+          color: "black",
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          height: "70px",
+          alignItems: "center",
+          justifyContentc: "center",
+        }}
+      >
+        <CustomSocialLinks />
       </section>
     </div>
   );

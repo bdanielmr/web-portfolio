@@ -30,6 +30,30 @@
   justify-content: center;
   align-items: center;
 }
+.test-body-hambuyrger > label {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.test-body-hambuyrger-item {
+  height: 3px;
+  width: 30px;
+  border-radius: 50px;
+  background: black;
+}
+.test-body-hambuyrger-item-spa {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
   .custom-header {
     justify-content: space-evenly;
