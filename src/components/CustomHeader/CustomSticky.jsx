@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-var */
+/* eslint-disable no-unused-vars */
+/* eslint-disable dot-notation */
 import React, { useState, useEffect, useRef } from "react";
 
 import classes from "./customSticky.module.scss";

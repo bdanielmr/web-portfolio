@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CustomHeader from "../src/components/CustomHeader/CustomHeader";
 import "../styles/globals.css";
 
