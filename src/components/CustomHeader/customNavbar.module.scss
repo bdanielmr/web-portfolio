@@ -8,7 +8,7 @@
 }
 
 .nav {
-  z-index: 2;
+  z-index: 1;
   height: 100%;
   align-items: center;
   display: flex;
@@ -60,7 +60,7 @@
 
 .nav-item .sub-menu {
   height: 150px;
-  top: 20px;
+  top: 10px;
   position: absolute;
   min-width: 35em;
   padding: 0.1em 0.1em;
@@ -69,16 +69,18 @@
   border-radius: 0rem;
 
   left: inherit;
-  background: white;
 }
 .sub-menu {
   margin-right: 0px;
 }
 .sub-menu ul {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   list-style-type: none;
   background: white;
   display: flex;
+  align-items: center;
 }
 
 .sub-menu-item {
@@ -100,7 +102,27 @@
   padding: 0px 0px 0px 0px;
   transition: background 0.3s ease;
 }
-
+.sub-menu-item-icon-profile::before {
+  font-family: fontAwesome;
+  font-size: 36px;
+  content: "\f007";
+  width: 50px;
+  height: 50px;
+}
+.sub-menu-item-icon-book::before {
+  font-family: fontAwesome;
+  font-size: 36px;
+  content: "\f135";
+  width: 50px;
+  height: 50px;
+}
+.sub-menu-item-icon-blog::before {
+  font-family: fontAwesome;
+  font-size: 36px;
+  content: "\f009";
+  width: 50px;
+  height: 50px;
+}
 .sub-menu-item a:hover,
 .sub-menu:hover ~ a {
 }

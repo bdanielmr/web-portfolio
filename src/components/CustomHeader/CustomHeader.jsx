@@ -5,6 +5,7 @@ import classtyles from "./customHeader.module.scss";
 import CustomNavbar from "./CustomNavbar";
 import CustomSticky from "./CustomSticky";
 import CustomLogo from "../CustomLogo/CustomLogo";
+import CustomOpenMenu from "../CustomOpenMenu/CustomOpenMenu";
 const CustomHeader = (props) => {
   const [modalNav, setModalNav] = useState(false);
   const handleClickExpandModalNav = () => {
@@ -21,37 +22,15 @@ const CustomHeader = (props) => {
           <div className={classtyles["test-hide"]}>
             <CustomNavbar />
           </div>
+          <div className={classtyles["test-icon"]}>
+            <a className={classtyles["test-body-icon"]} href="#"></a>
+          </div>
           <div className={classtyles["test-3"]}>
             <div
               onClick={handleClickExpandModalNav}
               className={classtyles["test-body-hambuyrger"]}
             >
-              {!modalNav ? (
-                <label>
-                  <div
-                    className={classtyles["test-body-hambuyrger-item"]}
-                  ></div>
-                  <div
-                    className={classtyles["test-body-hambuyrger-item"]}
-                  ></div>
-                  <div
-                    className={classtyles["test-body-hambuyrger-item"]}
-                  ></div>
-                </label>
-              ) : (
-                <>
-                  <label>
-                    <div
-                      className={classtyles["test-body-hambuyrger-item-spa"]}
-                    ></div>
-                    <div
-                      className={classtyles["test-body-hambuyrger-item-spa"]}
-                    >
-                      <span id="x">X</span>
-                    </div>
-                  </label>
-                </>
-              )}
+              <CustomOpenMenu />
             </div>
           </div>
         </div>

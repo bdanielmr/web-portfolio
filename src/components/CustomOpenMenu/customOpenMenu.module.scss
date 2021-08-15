@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+
+.labelMenuOpen {
+  .menu {
+    display: block;
+    right: 150px;
+    top: 0.1%;
+    z-index: 1;
+    width: 30px;
+    height: 40px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+  }
+  .hamburger {
+    position: relative;
+    top: 50%;
+    right: 0px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+    &:after,
+    &:before {
+      transition: 0.5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      bottom: -10px;
+    }
+  }
+  .inputMenuOpen {
+    display: none;
+  }
+  .inputMenuOpen:checked + .menu {
+    box-shadow: 0 0 0 100vw white, 0 0 0 100vh #fff;
+    border-radius: 0;
+    .hamburger {
+      transform: rotate(45deg);
+      &:after {
+        transform: rotate(90deg);
+        bottom: 0;
+      }
+      &:before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+
+  .inputMenuOpen:checked + .menu + ul {
+    opacity: 1;
+  }
+
+  .ulMenuOpen {
+    z-index: 2;
+    position: absolute;
+    top: 400%;
+    right: 50%;
+    background: white;
+    opacity: 0;
+    transition: 0.1s 0.2s ease-in-out;
+  }
+
+  .aMenuOpen {
+    margin-bottom: 1em;
+    display: block;
+    color: #000;
+    text-decoration: none;
+  }
+}

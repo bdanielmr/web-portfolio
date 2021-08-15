@@ -7,29 +7,26 @@ const CustomNavbar = ({
   dataDrop = [
     {
       id: 0,
-      item: "Soluciones",
+      item: "Sobre mi",
       drop: true,
       sub: [
         {
-          name: "Brokers",
+          name: "Perfil",
+          icon: "profile",
         },
         {
-          name: "Banca",
+          name: "Workbook",
+          icon: "book",
         },
         {
-          name: "Telco",
-        },
-        {
-          name: "Retail",
-        },
-        {
-          name: "Flotas",
+          name: "Blog",
+          icon: "blog",
         },
       ],
     },
     {
       id: 1,
-      item: "Apis",
+      item: "Contacto",
       drop: false,
     },
   ],
@@ -47,13 +44,11 @@ const CustomNavbar = ({
           {items.map((item, i) => {
             return (
               <li key={i} className={classes["sub-menu-item"]}>
-                <img
-                  style={{ cursor: "pointer" }}
-                  width="64"
-                  height="64"
-                  src={``}
-                  alt=""
-                />
+                <a
+                  className={`${
+                    classes[`${"sub-menu-item-icon-" + item.icon}`]
+                  }`}
+                ></a>
                 <a key={item.name} className={classes.a}>
                   {item.name}
                 </a>
