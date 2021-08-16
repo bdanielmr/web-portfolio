@@ -38,6 +38,8 @@
   &:hover button {
     opacity: 1;
     transform: scale(60.5);
+
+    z-index: 1;
   }
   &:hover .info_section {
     top: 55%;
