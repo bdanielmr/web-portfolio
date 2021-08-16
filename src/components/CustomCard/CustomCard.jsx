@@ -30,7 +30,11 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
         <div className={`${styles.blur_back + " " + styles.bright_back}`}></div>
         <button></button>
       </div>
-      {showModal && <CustomModal close={handleCloseModal} />}
+      {showModal && (
+        <div className={styles["movie_card-modal"]}>
+          <CustomModal close={handleCloseModal} />
+        </div>
+      )}
     </>
   );
 };

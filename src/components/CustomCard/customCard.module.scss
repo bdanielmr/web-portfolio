@@ -17,7 +17,7 @@
     transition: all 0.4s;
   }
   button {
-    position: relative;
+    position: absolute;
     right: 14px;
     bottom: 14px;
     width: 30px;
@@ -125,7 +125,10 @@
     background-size: cover;
   }
 }
-
+.movie_card-modal {
+  position: fixed;
+  z-index: 4;
+}
 @media screen and (min-width: 769px) {
   .movie_card {
     &:hover button {
