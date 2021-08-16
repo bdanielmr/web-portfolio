@@ -21,16 +21,20 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
   return (
     <>
       {showModal && <CustomModal close={handleCloseModal} />}
-      <div
-        onClick={handleClickModal}
-        style={putStylesVar()}
-        className={styles["movie_card"]}
-        id="bright"
-      >
-        <div className={styles["info_section"]}>{title}</div>
-        <div className={`${styles.blur_back + " " + styles.bright_back}`}></div>
-        <button></button>
-      </div>
+      <label>
+        <div
+          onClick={handleClickModal}
+          style={putStylesVar()}
+          className={styles["movie_card"]}
+          id="bright"
+        >
+          <div className={styles["info_section"]}>{title}</div>
+          <div
+            className={`${styles.blur_back + " " + styles.bright_back}`}
+          ></div>
+          <button></button>
+        </div>
+      </label>
     </>
   );
 };
