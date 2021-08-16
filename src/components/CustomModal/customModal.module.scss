@@ -1,0 +1,33 @@
+.custom-modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-modal-body {
+  width: 75%;
+  height: 80vh;
+}
+.custom-modal-body-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: white;
+}
+.custom-modal-body-container-close {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+.custom-modal-body-container-p {
+  text-align: end;
+  font-size: 36px;
+
+  cursor: pointer;
+}
