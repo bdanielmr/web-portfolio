@@ -31,7 +31,12 @@ const HomePageView = (props) => {
           </label>
           <div></div>
         </div>
-        <section style={{ background: "#dcece9", paddingTop: "25px" }}>
+        <section
+          style={{
+            background: "#dcece9",
+            paddingTop: "25px",
+          }}
+        >
           <h2 style={{ textAlign: "center" }}>My Work</h2>
 
           <CustomCard
