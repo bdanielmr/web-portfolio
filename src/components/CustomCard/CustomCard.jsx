@@ -21,7 +21,7 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
   return (
     <>
       {showModal && <CustomModal close={handleCloseModal} />}
-      <label>
+      <div>
         <div
           onClick={handleClickModal}
           style={putStylesVar()}
@@ -34,7 +34,7 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
           ></div>
           <button></button>
         </div>
-      </label>
+      </div>
     </>
   );
 };
