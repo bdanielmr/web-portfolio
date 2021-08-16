@@ -5,7 +5,6 @@ import styles from "./homePageView.module.scss";
 import CustomHeader from "../../components/CustomHeader/CustomHeader";
 import CustomSocialLinks from "../../components/CustomSocialLinks/CustomSocialLinks";
 import CustomCard from "../../components/CustomCard/CustomCard";
-import CustomCardView from "../../components/CustomCard/CustomCardView";
 
 const HomePageView = (props) => {
   return (
