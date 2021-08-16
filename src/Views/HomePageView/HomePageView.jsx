@@ -33,24 +33,21 @@ const HomePageView = (props) => {
         </div>
         <section style={{ background: "#dcece9", paddingTop: "25px" }}>
           <h2 style={{ textAlign: "center" }}>My Work</h2>
-          <div>
-            <CustomCard
-              title="Hello Movie"
-              imageBackground="https://i.imgur.com/sBbHNzY.jpg"
-            />
-          </div>
-          <div>
-            <CustomCard
-              title="Heroku User"
-              imageBackground="https://i.imgur.com/mc2IBea.jpg"
-            />
-          </div>
-          <div>
-            <CustomCard
-              title="Weather App"
-              imageBackground="https://i.imgur.com/HYLi9Wz.jpg"
-            />
-          </div>
+
+          <CustomCard
+            title="Hello Movie"
+            imageBackground="https://i.imgur.com/sBbHNzY.jpg"
+          />
+
+          <CustomCard
+            title="Heroku User"
+            imageBackground="https://i.imgur.com/mc2IBea.jpg"
+          />
+
+          <CustomCard
+            title="Weather App"
+            imageBackground="https://i.imgur.com/HYLi9Wz.jpg"
+          />
 
           <div
             style={{

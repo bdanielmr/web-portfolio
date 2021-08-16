@@ -19,8 +19,7 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
     setShowModal(false);
   };
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
-      {showModal && <CustomModal close={handleCloseModal} />}
+    <>
       <div
         onClick={handleClickModal}
         style={putStylesVar()}
@@ -31,7 +30,8 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
         <div className={`${styles.blur_back + " " + styles.bright_back}`}></div>
         <button></button>
       </div>
-    </div>
+      {showModal && <CustomModal close={handleCloseModal} />}
+    </>
   );
 };
 
