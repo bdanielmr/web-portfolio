@@ -14,7 +14,7 @@ const HomePageView = (props) => {
           {" "}
           <CustomSocialLinks />
           <label className={styles.homeLabelText}>
-            <h1 className={styles.text}>Hola! Soy BDanielMr</h1>
+            <h1 className={styles.text}>Hi! Iam BDanielMr</h1>
             <h2 className={styles.textTall}>
               {`${"Developer always eager to learn good coding practices, I like coding and tools that keep me focused check my "}`}
               <a

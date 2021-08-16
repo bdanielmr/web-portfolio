@@ -131,6 +131,7 @@
       transform: scale(26.5);
     }
   }
+
   .movie_header {
     width: 60%;
   }
@@ -154,6 +155,11 @@
     margin: 70px auto;
     min-height: 350px;
     height: auto;
+    &:hover .info_section {
+      top: 50%;
+      left: 30%;
+      color: black;
+    }
   }
 
   .blur_back {
