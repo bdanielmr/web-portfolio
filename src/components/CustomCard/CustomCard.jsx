@@ -20,6 +20,7 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
   };
   return (
     <>
+      {showModal && <CustomModal close={handleCloseModal} />}
       <div
         onClick={handleClickModal}
         style={putStylesVar()}
@@ -30,11 +31,6 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
         <div className={`${styles.blur_back + " " + styles.bright_back}`}></div>
         <button></button>
       </div>
-      {showModal && (
-        <div className={styles["movie_card-modal"]}>
-          <CustomModal close={handleCloseModal} />
-        </div>
-      )}
     </>
   );
 };
