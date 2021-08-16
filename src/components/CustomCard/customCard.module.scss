@@ -15,7 +15,7 @@
     transform: scale(1.02);
     transition: all 0.4s;
   }
-  button {
+  .card-button {
     position: absolute;
     right: 14px;
     bottom: 14px;
@@ -35,7 +35,7 @@
     }
   }
 
-  &:hover button {
+  &:hover .card-button {
     opacity: 1;
     transform: scale(60.5);
 
@@ -129,7 +129,7 @@
 
 @media screen and (min-width: 769px) {
   .movie_card {
-    &:hover button {
+    &:hover .card-button {
       transform: scale(26.5);
     }
   }

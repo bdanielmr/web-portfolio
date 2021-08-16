@@ -32,7 +32,7 @@ const CustomCard = ({ imageBackground = "", title = "" }) => {
           <div
             className={`${styles.blur_back + " " + styles.bright_back}`}
           ></div>
-          <button></button>
+          <button className={styles["card-button"]}></button>
         </div>
       </div>
     </>
