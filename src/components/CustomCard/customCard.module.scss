@@ -12,9 +12,10 @@
   border-radius: 15px;
   cursor: pointer;
   &:hover {
+    transform: scale(1.02);
     transition: all 0.4s;
   }
-  .card-button {
+  button {
     position: absolute;
     right: 14px;
     bottom: 14px;
@@ -34,10 +35,9 @@
     }
   }
 
-  &:hover .card-button {
+  &:hover button {
     opacity: 1;
-
-    z-index: 1;
+    transform: scale(60.5);
   }
   &:hover .info_section {
     top: 55%;
@@ -127,13 +127,8 @@
 
 @media screen and (min-width: 769px) {
   .movie_card {
-    &:hover .card-button {
-      border-radius: 0px;
-      position: absolute;
-      width: 30%;
-      height: 50%;
-      right: 0px;
-      bottom: 0px;
+    &:hover button {
+      transform: scale(26.5);
     }
   }
   .movie_header {
