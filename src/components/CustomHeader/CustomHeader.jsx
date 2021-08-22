@@ -23,7 +23,12 @@ const CustomHeader = (props) => {
             <CustomNavbar />
           </div>
           <div className={classtyles["test-icon"]}>
-            <a className={classtyles["test-body-icon"]} href="#"></a>
+            <a
+              className={classtyles["test-body-icon"]}
+              href="https://github.com/bdanielmr"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
           </div>
           <div className={classtyles["test-3"]}>
             <div

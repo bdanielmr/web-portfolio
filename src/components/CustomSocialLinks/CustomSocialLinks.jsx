@@ -6,22 +6,25 @@ const CustomSocialLinks = (props) => {
   return (
     <ul className={styles.ulContainer}>
       <li>
-        <a href="#">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/bryan-daniel-moncada-ramos-12b5b819a"
+        >
           <span></span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a target="_blank" rel="noreferrer" href="#">
           <span></span>
         </a>
       </li>
       <li>
-        <a href="#">
-          <span></span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://codesandbox.io/u/bdanielmr"
+        >
           <span></span>
         </a>
       </li>

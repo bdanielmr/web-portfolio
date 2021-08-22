@@ -25,7 +25,7 @@ const CustomNavbar = ({
         {
           name: "Blog",
           icon: "blog",
-          url: "/blog",
+          url: "https://bdanielmr.hashnode.dev/",
         },
       ],
     },
@@ -49,15 +49,22 @@ const CustomNavbar = ({
         <ul id="oap-sub-menu">
           {items.map((item, i) => {
             return (
-              <Link key={i} href={`${item?.url}`}>
+              <Link key={i} href={`${item?.url}`} passHref>
                 <li key={i} className={classes["sub-menu-item"]}>
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     key={i}
                     className={`${
                       classes[`${"sub-menu-item-icon-" + item.icon}`]
                     }`}
                   ></a>
-                  <a key={item.name} className={classes.a}>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    key={item.name}
+                    className={classes.a}
+                  >
                     {item.name}
                   </a>
                 </li>
