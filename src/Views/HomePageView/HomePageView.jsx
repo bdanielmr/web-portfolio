@@ -74,7 +74,7 @@ const HomePageView = (props) => {
                 textDecoration: "underline",
               }}
             >
-              Ver mas
+              show more
             </a>
           </div>
         </section>
