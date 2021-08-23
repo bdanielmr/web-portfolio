@@ -44,6 +44,7 @@ const HomePageView = (props) => {
             description="App that shows information about movies - Made with React and Hooks with use of useReducer and useContext to control the global state; and react-router-dom for routing and more
             "
             tec={["React", "react-router-dom", "hooks", "sass"]}
+            link="https://hello-movie.onrender.com/"
           />
 
           <CustomCard
@@ -51,6 +52,7 @@ const HomePageView = (props) => {
             imageBackground="https://i.imgur.com/mc2IBea.jpg"
             description="app that registers users and lists them at home. Performed with vue, vue-router and vuex as global state, use of axios and as vuevalidate for validations including nprogress, sass and others"
             tec={["Vue", "vue-router", "vuex", "sass"]}
+            link="http://138.68.54.112/"
           />
 
           <CustomCard
@@ -58,6 +60,7 @@ const HomePageView = (props) => {
             imageBackground="https://i.imgur.com/HYLi9Wz.jpg"
             description="app that consumes external weather apis and shows the statistics obtained made with vue"
             tec={["Vue", "vue-router", "axios", "sass"]}
+            link="https://codesandbox.io/s/weather-app-2bh3m?file=/src/services/DanServices.js"
           />
 
           <div

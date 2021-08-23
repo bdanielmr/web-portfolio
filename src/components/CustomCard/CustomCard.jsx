@@ -10,6 +10,7 @@ const CustomCard = ({
   title = "",
   description = "",
   tec = ["React"],
+  link = "",
 }) => {
   const [showModal, setShowModal] = useState(false);
   const putStylesVar = () => {
@@ -25,9 +26,15 @@ const CustomCard = ({
   };
   return (
     <>
-      {showModal && <CustomModal close={handleCloseModal} />}
-      <div
-        onClick={handleClickModal}
+      {/**
+       * MODAL OPTION
+    showModal && <CustomModal close={handleCloseModal} />
+  
+      */}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={link}
         style={putStylesVar()}
         className={styles["movie_card"]}
         id="bright"
@@ -47,7 +54,7 @@ const CustomCard = ({
         </div>
         <div className={`${styles.blur_back + " " + styles.bright_back}`}></div>
         <button></button>
-      </div>
+      </a>
     </>
   );
 };
