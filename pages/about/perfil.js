@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
+import CustomProfile from "../../src/components/CustomProfile/CustomProfile";
 
 const perfil = () => {
   return (
@@ -13,7 +14,7 @@ const perfil = () => {
         height: "100vh",
       }}
     >
-      Page
+      <CustomProfile />
     </div>
   );
 };
