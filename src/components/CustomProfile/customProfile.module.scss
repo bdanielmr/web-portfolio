@@ -133,7 +133,8 @@
   .c-p-flex2 {
     position: relative;
     display: flex;
-    height: 100;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     background: red;
     label {
       h2 {
@@ -149,7 +150,8 @@
     section {
       width: 100%;
       background: darkgoldenrod;
-      height: 100%;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
       display: flex;
     }
   }
