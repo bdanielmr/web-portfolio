@@ -2,12 +2,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./customProfile.module.scss";
+import CustomTimeCard from "../CustomTimeCard/CustomTimeCard";
 const CustomProfile = (props) => {
   return (
     <div className={styles["custom-profile"]}>
       <div
         className={styles["c-p-flex1"] + " " + styles["profile-description"]}
       >
+        <div className={styles["c-p-flex1-movile"]}>
+          <label>
+            <h2>Bryan Daniel Moncada Ramos</h2>
+          </label>
+          <label>
+            <h4>Developer</h4>
+            <p className={styles["body-icons-profile-share-location"]}>
+              {" "}
+              Peru - Lima
+            </p>
+          </label>
+        </div>
         <img
           width="150px"
           height="150px"
@@ -52,6 +65,9 @@ const CustomProfile = (props) => {
             Peru - Lima
           </p>
         </label>
+        <section>
+          <CustomTimeCard />
+        </section>
       </div>
       <div className={styles["c-p-flex3"]}></div>
     </div>

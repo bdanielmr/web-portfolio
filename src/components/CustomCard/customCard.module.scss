@@ -37,13 +37,13 @@
 
   &:hover button {
     opacity: 1;
-    transform: scale(36.5);
+    transform: scale(90.5);
   }
   &:hover .info_section-container {
     width: 100%;
     position: relative;
-    top: 80px;
-    right: 15%;
+
+    right: 110%;
     height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -164,7 +164,7 @@
   .movie_card {
     &:hover button {
       opacity: 1;
-      transform: scale(26.5);
+      transform: scale(90.5);
     }
   }
 }
@@ -217,7 +217,7 @@
       position: relative;
       height: 100%;
 
-      top: -120px;
+      top: -150px;
       left: -80px;
     }
   }
