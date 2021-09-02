@@ -112,7 +112,6 @@
 @media (max-width: 1024px) {
   .custom-profile {
     flex-flow: column nowrap;
-    background: red;
     height: 100vh;
   }
   .c-p-flex1-movile {
@@ -144,6 +143,8 @@
     }
     section {
       width: 100%;
+      background: darkgoldenrod;
+      height: 100%;
       display: flex;
     }
   }
