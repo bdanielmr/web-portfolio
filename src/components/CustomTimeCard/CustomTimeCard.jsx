@@ -115,7 +115,7 @@ const CustomTimeCard = (props) => {
           " " +
           styles["delay-3s"] +
           " " +
-          styles["timeline__event--type2"]
+          styles["timeline__event--type1"]
         }
       >
         <div className={styles.timeline__event__icon}>
