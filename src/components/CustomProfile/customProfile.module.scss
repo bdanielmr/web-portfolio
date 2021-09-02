@@ -113,7 +113,8 @@
   .custom-profile {
     position: relative;
     flex-flow: column nowrap;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
   .c-p-flex1-movile {
     margin-top: 20%;
