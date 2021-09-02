@@ -119,7 +119,6 @@
   .c-p-flex1 {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-    background: red;
   }
   .c-p-flex1-movile {
     margin-top: 20%;
@@ -139,7 +138,7 @@
     position: relative;
     display: flex;
     min-height: 400vh;
-    background: red;
+
     label {
       h2 {
         display: none;
@@ -153,7 +152,6 @@
     }
     section {
       width: 100%;
-      background: darkgoldenrod;
       min-height: 100vh;
       min-height: -webkit-fill-available;
       display: flex;
