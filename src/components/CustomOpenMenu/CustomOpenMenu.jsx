@@ -10,16 +10,30 @@ const CustomOpenMenu = (props) => {
         <span className={styles.hamburger}></span>
       </span>
       <ul className={styles.ulMenuOpen}>
-        <li>
+        <p className={styles.aMenuOpen} href="#">
+          About me:
+          <li style={{ marginLeft: "50%" }}>
+            <a href="/about/perfil">Profile</a>
+          </li>
+          <li style={{ marginLeft: "50%" }}>
+            <a href="/about/projects">Workbook</a>
+          </li>
+          <li style={{ marginLeft: "50%" }}>
+            <a
+              target="_blank"
+              href="https://bdanielmr.hashnode.dev/"
+              rel="noreferrer"
+            >
+              Blog
+            </a>
+          </li>
+        </p>
+
+        <p>
           <a className={styles.aMenuOpen} href="#">
-            Sobre mi
+            Contact
           </a>
-        </li>
-        <li>
-          <a className={styles.aMenuOpen} href="#">
-            Contacto
-          </a>
-        </li>
+        </p>
       </ul>
     </label>
   );

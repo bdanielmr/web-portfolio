@@ -18,6 +18,7 @@ const HomePageView = (props) => {
             <h2 className={styles.textTall}>
               {`${"Developer always eager to learn good coding practices, I like coding and tools that keep me focused check my "}`}
               <a
+                href="/about/projects"
                 style={{
                   textDecoration: "underline",
                   cursor: "pointer",
@@ -71,6 +72,7 @@ const HomePageView = (props) => {
             }}
           >
             <a
+              href="/about/projects"
               style={{
                 cursor: "pointer",
                 marginBottom: "25px",

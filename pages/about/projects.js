@@ -12,7 +12,7 @@ const projects = () => {
         alignItems: "center",
         width: "100%",
         height: "100%",
-        margin: "5% 0%",
+        margin: "10% 0%",
       }}
     >
       <CustomWorkbook />
