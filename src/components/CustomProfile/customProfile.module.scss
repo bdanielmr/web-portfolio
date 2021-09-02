@@ -112,6 +112,8 @@
 @media (max-width: 1024px) {
   .custom-profile {
     flex-flow: column nowrap;
+    background: red;
+    height: 100vh;
   }
   .c-p-flex1-movile {
     margin-top: 20%;
@@ -128,6 +130,7 @@
     }
   }
   .c-p-flex2 {
+    height: 900vh;
     label {
       h2 {
         display: none;
