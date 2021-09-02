@@ -116,6 +116,11 @@
     min-height: 100vh;
     min-height: -webkit-fill-available;
   }
+  .c-p-flex1 {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background: red;
+  }
   .c-p-flex1-movile {
     margin-top: 20%;
     display: flex;
