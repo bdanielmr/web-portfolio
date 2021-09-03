@@ -11,8 +11,7 @@ const CustomContact = (props) => {
           <span className={styles.input__label}>Email</span>
         </label>
         <div className={styles["button-group"]}>
-          <button onClick={() => alert("fi")}>Send</button>
-          <button type="reset">Reset</button>
+          <button onClick={() => alert("download")}>Send</button>
         </div>
       </div>
     </article>

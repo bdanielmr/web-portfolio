@@ -59,17 +59,20 @@
   }
 
   .inputMenuOpen:checked + .menu + ul {
+    display: block;
     opacity: 1;
+    animation: fade-in 1s;
   }
 
   .ulMenuOpen {
+    display: none;
     z-index: 2;
     position: absolute;
     top: 300%;
     right: 50%;
     background: white;
     opacity: 0;
-    transition: 0.1s 0.2s ease-in-out;
+    animation: fade-in 1.8s;
   }
 
   .aMenuOpen {
@@ -81,6 +84,16 @@
     font-weight: 600;
     li {
       margin: 5%;
+      a {
+      }
     }
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

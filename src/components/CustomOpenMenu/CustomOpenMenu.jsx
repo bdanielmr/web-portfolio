@@ -30,7 +30,7 @@ const CustomOpenMenu = (props) => {
         </p>
 
         <p>
-          <a className={styles.aMenuOpen} href="#">
+          <a className={styles.aMenuOpen} href="/contacto">
             Contact
           </a>
         </p>
