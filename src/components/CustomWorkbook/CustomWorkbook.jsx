@@ -66,7 +66,6 @@ const CustomWorkbook = (props) => {
                   <article>
                     <h1>{repo?.name}</h1>
                     <p> {repo?.description}</p>
-                    <span>Harry Brignull</span>
                   </article>
                 </a>
               </div>

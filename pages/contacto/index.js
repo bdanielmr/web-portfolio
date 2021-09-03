@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { memo } from "react";
 import PropTypes from "prop-types";
+import CustomContact from "../../src/components/CustomContact/CustomContact";
 
 const index = memo(function index(props) {
   return (
@@ -13,7 +14,7 @@ const index = memo(function index(props) {
         height: "100vh",
       }}
     >
-      PAGINA contacto
+      <CustomContact />
     </div>
   );
 });
