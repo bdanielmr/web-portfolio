@@ -7,13 +7,12 @@ import { getGithubRepo } from "../../helpers/getGithubRepo";
 
 const CustomWorkbook = (props) => {
   const { data: getRepos } = useFetch(getGithubRepo);
-  const auxRepos =
-    !!getRepos &&
+  !!getRepos &&
     getRepos?.map((repo, index) => {
       return { ...repo, imageRepoIndex: index };
     });
-  console.log(getRepos);
-  console.log(auxRepos);
+
+
   return (
     <div>
       <h1 style={{ marginLeft: "10%" }}>Workbook - Repos </h1>
