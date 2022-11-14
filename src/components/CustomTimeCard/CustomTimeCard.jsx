@@ -15,6 +15,76 @@ const CustomTimeCard = (props) => {
           " " +
           styles["delay-3s"] +
           " " +
+          styles["timeline__event--type3"]
+        }
+      >
+        <div className={styles.timeline__event__icon}>
+          <i className={styles["lni-cake"]}></i>
+        </div>
+        <div className={styles.timeline__event__date}>
+          09/2022 - 11/2022{" "}
+        </div>
+        <div className={styles.timeline__event__content}>
+          <div className={styles.timeline__event__title}>
+            Skydropx - Logisca
+          </div>
+          <div className={styles.timeline__event__description}>
+            <p>
+              - Desarrollo de microfrontends con Typescript, React, Next.js:
+              <li>Desarrollo de componentes</li>
+              <li>Documentacion en Storybook</li>
+              <li>Uso de hooks</li>
+              <li>Reactquery state manage</li>
+              <li>Unit test jest</li>
+            </p>
+          </div>
+        </div>
+      </div>
+        <div
+        className={
+          styles.timeline__event +
+          " " +
+          styles.animated +
+          " " +
+          styles.fadeInUp +
+          " " +
+          styles["delay-3s"] +
+          " " +
+          styles["timeline__event--type10"]
+        }
+      >
+        <div className={styles.timeline__event__icon}>
+          <i className={styles["lni-cake"]}></i>
+        </div>
+        <div className={styles.timeline__event__date}>
+          01/09/2020 - 30/12/2021{" "}
+        </div>
+        <div className={styles.timeline__event__content}>
+          <div className={styles.timeline__event__title}>
+            Clipster - Media Buyers
+          </div>
+          <div className={styles.timeline__event__description}>
+            <p>
+              - Desarrollo Media buyer booilerplate para la creación de :
+              <li>Control de advertise</li>
+              <li>Typescript</li>
+              <li>React</li>
+              <li>Uso de hooks</li>
+              <li>Cypress test</li>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          styles.timeline__event +
+          " " +
+          styles.animated +
+          " " +
+          styles.fadeInUp +
+          " " +
+          styles["delay-3s"] +
+          " " +
           styles["timeline__event--type4"]
         }
       >
