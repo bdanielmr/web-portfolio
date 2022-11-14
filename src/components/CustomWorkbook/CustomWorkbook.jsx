@@ -7,7 +7,7 @@ import { getGithubRepo } from "../../helpers/getGithubRepo";
 
 const CustomWorkbook = (props) => {
   const { data: getRepos } = useFetch(getGithubRepo);
-  !!getRepos &&
+  const auxRepos = !!getRepos &&
     getRepos?.map((repo, index) => {
       return { ...repo, imageRepoIndex: index };
     });
