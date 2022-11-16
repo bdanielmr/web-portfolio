@@ -5,9 +5,7 @@ import i18n from "i18next";
 import PropTypes from "prop-types";
 import classes from "./customNavbar.module.scss";
 import Link from "next/link";
-import IconEnLanguaje from "../../../public/en-language-icon.png";
-import IconEsLanguaje from "../../../public/es-language-icon.png";
-import Image from "next/image";
+
 import { useTranslation } from "react-i18next";
 
 const CustomNavbar = ({
@@ -48,13 +46,13 @@ const CustomNavbar = ({
       sub: [
         {
           name: "English",
-          icon: IconEnLanguaje,
+          icon: "",
           url: "/",
           value: "en",
         },
         {
           name: "Español",
-          icon: IconEsLanguaje,
+          icon: "",
           url: "/",
           value: "es",
         },
@@ -82,7 +80,7 @@ const CustomNavbar = ({
               <Link key={i} href={`${item?.url}`} passHref>
                 <li key={i} className={classes["sub-menu-item"]}>
                   {
-                    status ? <><Image style value={item.value} width={36} height={36} src={item.icon} /><button className={classes["button-languaje"]} onClick={onchangeLanguage} value={item.value}></button></>:<>
+                    status ? <><button className={classes["button-languaje"]} onClick={onchangeLanguage} value={item.value}>{item?.value?.toUpperCase()}</button></>:<>
                     <a
                     target="_blank"
                     rel="noreferrer"
