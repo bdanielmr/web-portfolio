@@ -17,17 +17,7 @@ const HomePageView = (props) => {
           <label className={styles.homeLabelText}>
             <h1 className={styles.text}>{t("home.title")}</h1>
             <h2 className={styles.textTall}>
-              {`${"Developer always eager to learn good coding practices, I like coding and tools that keep me focused check my "}`}
-              <a
-                href="/about/projects"
-                style={{
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                  color: "white",
-                }}
-              >
-                work
-              </a>
+            <div className={styles.descriptionHome} dangerouslySetInnerHTML={{ __html: t("home.description"),}}></div>
             </h2>
           </label>
           <div></div>

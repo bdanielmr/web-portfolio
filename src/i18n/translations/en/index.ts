@@ -1,0 +1,1 @@
+export { default as homeEn } from "./homeEn.json";
