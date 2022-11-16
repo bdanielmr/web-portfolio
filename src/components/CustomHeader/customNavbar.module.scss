@@ -63,7 +63,7 @@
   padding-right: 8%;
 }
 .nav-item .sub-menu {
-  height: 150px;
+  height: 125px;
   top: 10px;
   position: absolute;
   min-width: 30em;
@@ -71,12 +71,12 @@
   display: none;
   z-index: 2;
   border-radius: 0rem;
-
   left: inherit;
 }
 .sub-menu {
   display: flex;
   margin-right: 0px;
+
 }
 .sub-menu ul {
   width: 100%;
@@ -86,6 +86,8 @@
   background: white;
   display: flex;
   align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 6px;
 }
 
 .sub-menu-item {
@@ -129,6 +131,21 @@
   content: "\f009";
   width: 50px;
   height: 50px;
+  cursor: pointer;
+}
+.sub-menu-item-icon-language::before {
+  font-family: fontAwesome;
+  font-size: 24px;
+  content: "\f1ab";
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.button-languaje{
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background: transparent;
   cursor: pointer;
 }
 .sub-menu-item a:hover,

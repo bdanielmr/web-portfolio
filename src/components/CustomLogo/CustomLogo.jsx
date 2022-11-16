@@ -4,8 +4,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import clasess from "./customLogo.module.scss";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 const CustomLogo = ({ introText = "Bdaniel", endingText = "Mr" }) => {
   const router = useRouter();
+  const { t } = useTranslation()
   return (
     <>
       <div
@@ -14,10 +16,7 @@ const CustomLogo = ({ introText = "Bdaniel", endingText = "Mr" }) => {
         className={clasess.logoRimacBody}
       >
         <div>
-          <p className={clasess["logo-intro-text"]}>
-            {introText}
-            <a className={clasess["logo-ending-text"]}>{endingText}</a>
-          </p>
+          <div className={clasess["logo-intro-text"]} dangerouslySetInnerHTML={{ __html: t("home.name_logo"),}}></div>
         </div>
       </div>
     </>

@@ -1,15 +1,21 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
+import i18n from "i18next";
 import PropTypes from "prop-types";
 import classes from "./customNavbar.module.scss";
 import Link from "next/link";
+import IconEnLanguaje from "../../../public/en-language-icon.png";
+import IconEsLanguaje from "../../../public/es-language-icon.png";
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
+
 const CustomNavbar = ({
   dataDrop = [
     {
       id: 0,
       url: "/",
-      item: "Sobre mi",
+      item: "about_me",
       drop: true,
       sub: [
         {
@@ -31,27 +37,53 @@ const CustomNavbar = ({
     },
     {
       id: 1,
-      item: "Contacto",
+      item: "contact",
       drop: false,
       url: "/contacto",
+    },
+    {
+      id: 2,
+      item: "language",
+      drop: true,
+      sub: [
+        {
+          name: "English",
+          icon: IconEnLanguaje,
+          url: "/",
+          value: "en",
+        },
+        {
+          name: "Español",
+          icon: IconEsLanguaje,
+          url: "/",
+          value: "es",
+        },
+      ],
+      url: "/",
     },
   ],
 }) => {
   const [showOver, setShowOver] = useState(false);
+  const { t } = useTranslation()
   const handleEnter = (e) => {
     setShowOver(e?.drop);
   };
 
   // show items to links
-  const CustomItemDrop = ({ items }) => {
+  const CustomItemDrop = ({ items, status }) => {
+    const onchangeLanguage = (e) => {
+      i18n.changeLanguage(e.target.value);
+    }
     return (
       <div className={classes["sub-menu"]}>
-        <ul id="oap-sub-menu">
+        <ul style={{ width: status ? "50%" : "100%"}} id="oap-sub-menu">
           {items.map((item, i) => {
             return (
               <Link key={i} href={`${item?.url}`} passHref>
                 <li key={i} className={classes["sub-menu-item"]}>
-                  <a
+                  {
+                    status ? <><Image style value={item.value} width={36} height={36} src={item.icon} /><button className={classes["button-languaje"]} onClick={onchangeLanguage} value={item.value}></button></>:<>
+                    <a
                     target="_blank"
                     rel="noreferrer"
                     key={i}
@@ -67,6 +99,9 @@ const CustomNavbar = ({
                   >
                     {item.name}
                   </a>
+                    </>
+                  }
+
                 </li>
               </Link>
             );
@@ -94,10 +129,16 @@ const CustomNavbar = ({
                 id="oap"
                 href={`${drop?.url}`}
               >
-                {drop.item}
+                {drop.item === "language" ? 
+                (<a
+                  key={drop.item}
+                  className={`${
+                    classes[`${"sub-menu-item-icon-language"}`]
+                  }`}
+                ></a>) : t(`home.${drop.item}`) }
               </Link>
 
-              {drop.drop && <CustomItemDrop items={drop.sub} />}
+              {drop.drop && <CustomItemDrop items={drop.sub} status={drop.item === "language"} />}
             </li>
           );
         })}

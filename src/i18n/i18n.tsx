@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { home } from "./locales";
+import { homeEn, homeEs } from "./translations";
+
 
 const i18nInit = () => {
   if (i18n.isInitialized) return;
@@ -9,10 +10,11 @@ const i18nInit = () => {
       .use(initReactI18next)
       .init({
         resources:{
-          es: { translation: home }
+          en: { translation: homeEn },
+          es: { translation: homeEs },
         },
-        lng: "es",
-        fallbackLng: "es",
+        lng: "en",
+        fallbackLng: "en",
         interpolation: { escapeValue: false }
       });
 };

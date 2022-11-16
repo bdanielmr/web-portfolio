@@ -32,6 +32,14 @@
   text-align: justify;
   text-justify: inter-word;
 }
+.descriptionHome{
+  a {
+    text-decoration:underline ;
+    cursor: pointer;
+    color: white
+  }
+  }
+
 /* For presentation only, no need to copy the code below */
 
 .container * {

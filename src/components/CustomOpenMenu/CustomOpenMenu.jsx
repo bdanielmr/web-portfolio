@@ -10,7 +10,7 @@ const CustomOpenMenu = (props) => {
         <span className={styles.hamburger}></span>
       </span>
       <ul className={styles.ulMenuOpen}>
-        <p className={styles.aMenuOpen} href="#">
+        <ul className={styles.aMenuOpen} href="#">
           About me:
           <li style={{ marginLeft: "50%" }}>
             <a href="/about/perfil">Profile</a>
@@ -27,7 +27,7 @@ const CustomOpenMenu = (props) => {
               Blog
             </a>
           </li>
-        </p>
+        </ul>
 
         <p>
           <a className={styles.aMenuOpen} href="/contacto">
