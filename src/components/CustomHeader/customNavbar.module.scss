@@ -147,6 +147,8 @@
   position: absolute;
   background: transparent;
   cursor: pointer;
+  font-weight: 800;
+  border:2px solid black;
 }
 .sub-menu-item a:hover,
 .sub-menu:hover ~ a {
