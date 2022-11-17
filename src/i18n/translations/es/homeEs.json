@@ -1,9 +1,10 @@
 {
     "home": {
-        "name_logo": "Bdaniel<a>Mr</a>",
+        "name_logo": "Bdaniel",
         "title": "Hola, Soy Bdanielmr :)",
-        "description": "FrontEnd, anteriormente como programador en diferentes proyectos. Me gusta aprender buenas prácticas , mira mis <a href='/about/projects' > proyectos</a>",
+        "description": "FrontEnd, anteriormente como programador en diferentes proyectos. Me gusta aprender buenas prácticas , mira mis ",
         "about_me": "Sobre mi",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "work": "proyectos"
     }
 }
