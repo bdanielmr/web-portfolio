@@ -16,7 +16,7 @@ const CustomLogo = ({ introText = "Bdaniel", endingText = "Mr" }) => {
         className={clasess.logoRimacBody}
       >
         <div>
-          <div className={clasess["logo-intro-text"]} dangerouslySetInnerHTML={{ __html: t("home.name_logo"),}}></div>
+          <div className={clasess["logo-intro-text"]}>{t("home.name_logo")}<a>Mr</a></div>
         </div>
       </div>
     </>

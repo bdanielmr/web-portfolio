@@ -3,7 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./homePageView.module.scss";
 import CustomHeader from "../../components/CustomHeader/CustomHeader";
-import CustomSocialLinks from "../../components/CustomSocialLinks/CustomSocialLinks";
 import CustomCard from "../../components/CustomCard/CustomCard";
 import { useTranslation } from "react-i18next";
 const HomePageView = (props) => {
@@ -12,12 +11,10 @@ const HomePageView = (props) => {
     <>
       <div className={styles.container}>
         <div className={styles.containerDos}>
-          {" "}
-          <CustomSocialLinks />
           <label className={styles.homeLabelText}>
             <h1 className={styles.text}>{t("home.title")}</h1>
             <h2 className={styles.textTall}>
-            <div className={styles.descriptionHome} dangerouslySetInnerHTML={{ __html: t("home.description"),}}></div>
+            <div className={styles.descriptionHome}>{t("home.description")}<a>{t("home.work")}</a></div>
             </h2>
           </label>
           <div></div>
@@ -87,7 +84,6 @@ const HomePageView = (props) => {
             justifyContentc: "center",
           }}
         >
-          <CustomSocialLinks />
         </section>
       </div>
     </>
