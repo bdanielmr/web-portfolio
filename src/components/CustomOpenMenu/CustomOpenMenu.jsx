@@ -1,8 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import PropTypes from "prop-types";
+import i18n from "i18next";
 import styles from "./customOpenMenu.module.scss";
+import {useRouter} from "next/router";
+
 const CustomOpenMenu = (props) => {
+  const handleLanguajeMenu = (e) => {
+    i18n.changeLanguage(e);
+  }
   return (
     <label className={styles.labelMenuOpen}>
       <input className={styles.inputMenuOpen} type="checkbox" />
@@ -29,11 +34,17 @@ const CustomOpenMenu = (props) => {
           </li>
         </ul>
 
-        <p>
-          <a className={styles.aMenuOpen} href="/contacto">
+          <ul className={styles.aMenuOpen} href="/contacto">
             Contact
-          </a>
-        </p>
+          </ul>
+
+
+        <ul className={styles.aMenuOpen} href="#">
+          Languaje:
+            <li  style={{ marginLeft: "50%" }}  href="#"  onClick={()=>handleLanguajeMenu("en")} ><a>English</a></li>
+            <li  style={{ marginLeft: "50%" }}  href="#" onClick={()=>handleLanguajeMenu("es")} ><a>Spanish</a></li>
+        </ul>
+
       </ul>
     </label>
   );
